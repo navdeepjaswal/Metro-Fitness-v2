@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Metro-Fitness</title>
+      <link rel="stylesheet" href="css/sign-in.css" />
+      
+      <link rel="stylesheet" href="css/nav.css" />
+      <link
+         rel="stylesheet"
+         type="text/css"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+         />
+      <script
+         src="https://kit.fontawesome.com/8c1c84cc00.js"
+         crossorigin="anonymous"
+         ></script>
+   </head>
+   <body class="align">
+      <!--NAVIGATION MENU-->
+      <section>
+         <header>
+            <div class="nav-container">
+               <a id="logo" href="index.html">
+                  <h2>MetroFitness</h2>
+               </a>
+               <nav>
+                  <a id="home" href="index.html">Home</a>
+                  <a id="signUp" href="sign-up.html">Sign Up</a>
+                  <a id="signIn" href="sign-in.html" class="sign-in-btn">Sign In</a>
+               </nav>
+               <button class="hamburger">
+                  <div class="bar"></div>
+               </button>
+            </div>
+         </header>
+         <nav class="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+         </nav>
+         <script src="./js/navbar.js"></script>
+      </section>
+      <!--END OF NAVIGATION MENU-->
+      <div class="container">
+         <div class="sign-in-form left-side">
+            <img class="vector" src="./images/Vector.svg" alt="" />
+            <h1 class="introduction">Lo<span>gin</span></h1>
+            <p class="intro-pg introduction">
+               Welcome back! Please login to be redirected to our dashboard 🚀
+            </p>
+            <div class="grid">
+               <form id="signInForm" class="form login">
+                  <div class="form__field">
+                     <label for="login__username"
+                        ><img src="./images/email-icon.svg" alt="" /><span
+                        class="hidden"
+                        >Username</span
+                        ></label
+                        >
+                     <input
+                        autocomplete="email"
+                        id="email"
+                        type="text"
+                        name="email"
+                        class="form__input"
+                        placeholder="Email Address"
+                        required
+                        />
+                  </div>
+                  <div class="form__field">
+                     <label for="login__password"
+                        ><img
+                        class="key-icon"
+                        src="./images/key-icon.svg"
+                        alt=""
+                        /><span class="hidden">Password</span></label
+                        >
+                     <input
+                        id="password"
+                        type="password"
+                        name="password"
+                        class="form__input"
+                        placeholder="Password"
+                        required
+                        />
+                  </div>
+                  <div class="form__field">
+                     <input type="submit" value="Sign In" />
+                  </div>
+               </form>
+               <p class="redirect-text">
+                  Don't Have an Account? <a href="sign-up.html">Sign Up Now</a>
+               </p>
+            </div>
+         </div>
+         <div class="right-side">
+            <img src="./images/sign-in-illustration.svg" alt="" />
+         </div>
+      </div>
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+         ></script>
+      <script src="/js/auth.js"></script>
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

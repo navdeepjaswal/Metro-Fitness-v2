@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>Set Up Your Profile</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Custom styles for this template -->
+    <!-- <link href="/css/styles.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="css/onboarding.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container bg-orange">
+        <div id="letsGetStarted" class="measurements col-lg-6 mt-5 mx-auto">
+            <h1 class="text-center heading fw-bolder">Set up your profile</h1>
+            <p class="lead text-center mb-5 heading-pg">
+                We are glad to have you on board! Please fill in the fields thoroughly 👍
+            </p>
+            <form id="onboardingForm">
+                <div class="row">
+                    <div class="form-group mb-3">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" max="100" id="age" placeholder="Enter Age">
+                    </div>
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="weight">Gender</label>
+                        <select id="gender" class="form-control">
+                <option selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="weight">Weight (lbs)</label>
+                        <input type="number" class="form-control" id="weight" max="500" placeholder="Enter Weight (lbs)" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="feet">Height</label>
+                            <input type="number" class="form-control" id="feet" min="0" max="7" placeholder="Feet" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="inches"></label>
+                            <input type="number" class="form-control" id="inches" min="0" max="11" placeholder="Inches" />
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="activity">Activity Level</label>
+                        <select id="activity" class="form-control">
+                <option selected>Select Activity Level</option>
+                <option value="1">Inactive (Rarely exercise)</option>
+                <option value="2">
+                  Somewhat active (Exercise occasionally)
+                </option>
+                <option value="3">Active (Exercise 3-4 days per week)</option>
+                <option value="4">Highly Active (Exercise everyday)</option>
+              </select>
+                    </div>
+                </div>
+                <button id="continueBtn" type="submit" class="continueBtn btn btn-primary w-100">
+            Continue
+          </button>
+            </form>
+        </div>
+
+        <div class="goals mt-3" id="setYourGoals" class="col-lg-6 p-3 mx-auto">
+            <div class="mt-3 mb-3">
+                <a style="cursor: pointer" id="setYourGoalsBackBtn"><i class="fa fa-angle-left" aria-hidden="true"></i> Go back</a>
+            </div>
+            <h1 class="header-pt2 text-center fw-bolder">Wait! There's One More Step Left <span id="rocketEmoji">🚀</span> </h1>
+            <p class="lead text-center mb-5">
+                Let's decide your daily caloric intake! Please select one of the following:
+            </p>
+
+            <div class="chooseCalorie d-flex justify-content-center gap-5">
+                <button id="goWithRecommendationBtn" class="goWithRecommendationBtn p-3 btn btn-primary m-1 border"> 
+            <img class="mb-3" src="/images/calorie_intake.png">
+
+          <h4>Automatic</h4>
+          <p>Select this card if you want us to calculate your calorie intake</p>
+            </button>
+
+                <button id="enterMyOwnBtn" class="enterMyOwnBtn btn btn-light m-1 border">
+          <img class="mb-3" src="/images/calorie_intake.png">
+          <h4>Manual</h4>
+          <p>Select this card if you want to manually input calories</p>
+          </button>
+            </div>
+        </div>
+
+        <div id="whatIsYourGoal" class="whatIsYourGoal">
+            <div class="mt-3 mb-3">
+                <a style="cursor: pointer;" id="whatIsYourGoalBackBtn"><i class="fa fa-angle-left" aria-hidden="true"></i> Go
+                back</a>
+            </div>
+            <div class="col-lg-6 mx-auto">
+            <div class="form-group mb-3">
+                <h1 class="heading">What is your goal?</h1>
+                <p class="lead mb-3">We will calculate the optimal calorie intake for you based on your goal</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="goalSelected" id="loseWeightRadioBtn" value="lose" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                  I want to lose weight
+                </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="goalSelected" id="maintainWeightRadioBtn" value="maintain">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                  I want to maintain weight
+                </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="goalSelected" id="gainWeightRadioBtn" value="gain">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                  I want to gain weight
+                </label>
+                </div>
+            </div>
+    
+            <div id="submitBtnContainer" class="col-lg-6 mx-auto">
+                <button id="submitBtn" class="btn text-white w-100">Submit</button>
+            </div>
+            </div>
+        </div>
+
+        <div id="calorieIntakeContainer" class="calorieIntakeContainer">
+            <div class="mt-3 mb-3">
+                <a style="cursor: pointer" id="customIntakeBackBtn">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i> Go back</a>
+            </div>
+
+            <div class="col-lg-6 mx-auto">
+                <h1 class="heading text-center mb-3">Enter your preferred calorie intake</h1>
+                <div class="form-group mb-3">
+                    <label for="calorieIntake">Calorie Intake</label>
+                    <input type="number" class="form-control" max="10000" id="calorieIntake" min="0" max="7" placeholder="Enter Calorie Intake" />
+                </div>
+                <button id="submitCalorieBtn" class="btn btn-primary m-1" type="submit">
+                Submit
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // hiding and un-hiding divs
+        let continueBtn = document.querySelector(".continueBtn");
+        let goals = document.querySelector(".goals");
+        let measurements = document.querySelector(".measurements");
+        let setYourGoalsBackBtn = document.querySelector("#setYourGoalsBackBtn");
+        let enterMyOwnBtn = document.querySelector(".enterMyOwnBtn");
+        let calorieIntakeContainer = document.querySelector(".calorieIntakeContainer");
+        let goWithRecommendationBtn = document.querySelector(".goWithRecommendationBtn");
+        let customIntakeBackBtn = document.querySelector("#customIntakeBackBtn");
+        let whatIsYourGoal = document.querySelector(".whatIsYourGoal");
+        let whatIsYourGoalBackBtn = document.querySelector("#whatIsYourGoalBackBtn");
+
+
+        let name = document.querySelector("#name");
+        let age = document.querySelector("#age");
+        let gender = document.querySelector("#gender");
+        let weight = document.querySelector("#weight");
+        let feet = document.querySelector("#feet");
+        let inches = document.querySelector("#inches");
+        let activity = document.querySelector("#activity");
+
+        // Continue Button event listener
+
+        continueBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            if (name && age && gender && weight && feet && inches && activity) {
+                goals.style.display = "block";
+                measurements.style.display = "none";
+            } else {
+                alert("Please fill in all required information")
+            }
+
+
+        });
+
+        // Back Button event listener
+        setYourGoalsBackBtn.addEventListener("click", function() {
+            measurements.style.display = "block";
+            goals.style.display = "none";
+        });
+
+        // Enter own calorie intake Button event listener
+        enterMyOwnBtn.addEventListener("click", function() {
+            calorieIntakeContainer.style.display = "block";
+            goals.style.display = "none";
+            customIntakeBackBtn.style.display = "block";
+        });
+
+        // Go back (when inputting own calories) Button event listener
+        customIntakeBackBtn.addEventListener("click", function() {
+            calorieIntakeContainer.style.display = "none";
+            customIntakeBackBtn.style.display = "none";
+            goals.style.display = "block";
+        });
+
+        // Automatic calorie intake Button event listener
+        goWithRecommendationBtn.addEventListener("click", function() {
+            calorieIntakeContainer.style.display = "none";
+            goals.style.display = "none";
+            whatIsYourGoal.style.display = "block";
+
+        });
+
+        whatIsYourGoalBackBtn.addEventListener("click", function() {
+            whatIsYourGoal.style.display = "none";
+            goals.style.display = "block";
+        });
+    </script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/onboarding.js"></script>
+</body>
+
+</html>

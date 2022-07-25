@@ -1,0 +1,83 @@
+.metro-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+  
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  
+  /* Modal Content */
+  .metro-modal-content {
+    background: rgba(39, 41, 51, 0.6);
+    box-shadow: 11px 4px 17px -8px #1E1F28;
+    backdrop-filter: blur(26px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 8px;
+    padding: 2em 4em;
+    margin: auto;
+    animation:fadeout .8s;
+
+
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+
+    option {
+      background-color: #333333;
+      box-shadow: 11px 4px 17px -8px #1E1F28;
+      backdrop-filter: blur(26px);
+      border-radius: 3px;
+    }
+
+    select {
+      margin-bottom: 1em;
+    }
+
+
+    h1 {
+      text-align: center;
+      text-transform: capitalize;
+      padding: 12px 24px;
+      font-weight: 500;
+      color: white;
+      
+    }
+
+    .input-ctn {
+      margin: 0 auto;
+
+      .btn-container {
+  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+      }
+    
+    }
+  }
+  
+  /* The Close Button */
+  .metro-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .metro-close:hover,
+  .metro-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer {
+  background: white;
+  padding: 70px 0;
+}
+
+footer .footer-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+footer .footer-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer-container ul {
+  list-style: none;
+}
+
+footer .footer-container .footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+footer .footer-container .footer-col h4 {
+  font-size: 18px;
+  color: #6759BD;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+footer .footer-container .footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(15.2%, #775BC5), color-stop(89.31%, #7393D1));
+  background: linear-gradient(90deg, #775BC5 15.2%, #7393D1 89.31%);
+  height: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50px;
+}
+
+footer .footer-container .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+footer .footer-container .footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #9187CB;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .footer-container .footer-col ul li a:hover {
+  color: #3B24C7;
+  padding-left: 8px;
+}
+
+footer .footer-container .footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  outline: 2px solid #E8E5FF;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #3B24C7;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .footer-container .footer-col .social-links a:hover {
+  color: #24262b;
+  background: linear-gradient(90.15deg, #BEC9FF 0.09%, #D2CAFF 99.84%);
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
